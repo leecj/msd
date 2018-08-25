@@ -1,9 +1,13 @@
 spring:
   application:
     name: auth
-  cloud:
-    config:
-      uri: http://localhost:8888
-      fail-fast: true
-      label: master
-      profile: dev
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+#      fail-fast: true
+#      label: master
+#      profile: dev
+  security:
+    user:
+      name: lee
+      password: qwe

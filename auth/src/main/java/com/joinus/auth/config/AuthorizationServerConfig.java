@@ -13,7 +13,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
             throws Exception {
         clients.inMemory()
                 .withClient("clientapp")
-                .secret("112233")
+                .secret("{noop}112233")
                 .redirectUris("http://localhost:9001/callback")
                 .authorizedGrantTypes("authorization_code")
                 .scopes("read_userinfo", "read_contacts");
