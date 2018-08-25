@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: auth
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      label: master
+      profile: dev
